@@ -23,11 +23,6 @@ emp.procesarTrabajador(t2)
 emp.procesarTrabajador(t3)
 emp.procesarTrabajador(t4)
 
-emp.procesarSueldo(t1)
-emp.procesarSueldo(t2)
-emp.procesarSueldo(t3)
-emp.procesarSueldo(t4)
-
 let salida=document.getElementById("salida")
 salida.innerHTML=`Monto total pagado por horas extra: ${emp.montoTotalExtra()}.
 <br>El trabajador ${emp.nombreMenor()} fue el peor pagado, con un total de ${emp.sueldoMenor()}$.`

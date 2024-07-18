@@ -7,13 +7,10 @@ export default class Cl_Empresa{
     }
     procesarTrabajador(t){
         this.acumHE+=t.hE*25  
-    }
-    montoTotalExtra(){return this.acumHE}
-
-    procesarSueldo(t){
         if(t.hR>0 || t.hE>0){this.sueldo=((t.hR*10)+(t.hE*25))}
         if(this.sueldo<this.sM){this.sM=this.sueldo; this.nM=t.nombre}
     }
+    montoTotalExtra(){return this.acumHE}
     nombreMenor(){return this.nM}
     sueldoMenor(){return this.sM}
 }
